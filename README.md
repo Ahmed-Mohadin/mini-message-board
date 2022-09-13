@@ -12,13 +12,31 @@
 
 ## Installing and Getting Started
 
+To get started, clone the project
+
 ```
-git https://github.com/Ahmed-Mohadin/mini-message-board.git
-cd mini-message-board
+git clone https://github.com/Ahmed-Mohadin/mini-message-board.git
+```
+
+Install the NPM packages
+
+```
 npm install
-npm run devStart
-Open http://localhost:3000 to view it on the browser
 ```
+
+Run the following script in your command line for development mode
+
+```
+npm run devstart
+```
+
+Run the following script in your command line for production mode
+
+```
+npm run start
+```
+
+Once the server is running, go to [_http://localhost:3000_](http://localhost:3000) in your browser
 
 ## Built With
 
@@ -26,3 +44,7 @@ Open http://localhost:3000 to view it on the browser
 - [_Express.js_](https://expressjs.com)
 - Template engine [_EJS_](https://ejs.co)
 - [_nodemon_](https://nodemon.io)
+
+```
+
+```
