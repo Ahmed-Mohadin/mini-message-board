@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+  <%- include('./partials/head.ejs') %>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <%- include('./partials/header.ejs') %>
+
+    <div class="message-board">
+      <a class="btn btn-new" href="/new">Create a new message</a>
+      <% messages.forEach((message) => {%>
+      <div class="message-card">
+        <h3><%= message.user %></h3>
+        <p><span class="arrow-right">></span><%= message.text %></p>
+        <span><%= message.added %></span>
+      </div>
+      <% }) %>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
   </body>
 </html>
